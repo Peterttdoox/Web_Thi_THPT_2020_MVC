@@ -35,5 +35,10 @@ namespace WebMVC_OnthiTHPT2020.Controllers
         {
             return View();
         }
+
+        public ActionResult teaCher()
+        {
+            return View();
+        }
     }
 }
