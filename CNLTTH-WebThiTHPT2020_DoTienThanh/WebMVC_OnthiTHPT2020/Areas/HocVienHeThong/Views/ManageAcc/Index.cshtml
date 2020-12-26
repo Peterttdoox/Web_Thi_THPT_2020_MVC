@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Học viên hệ thống";
+    Layout = "~/Areas/HocVienHeThong/Views/Shared/_layoutAdmin.cshtml";
+}
+@*@using CNLTTH_WebThiTHPT2020_DoTienThanh.DTO;
+@model  HocVien*@
+
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Quản lý tài khoản</h3>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="x_panel">
+            <div class="x_content">
+                <div id="gender" class="btn-group" data-toggle="buttons"></div>
+                <div class="col-md-6 col-sm-6 ">
+
+                </div>
+
+                <form method="post" action="SearchAcc">
+                    <div class="col-md-3 col-sm-3 ">
+                        <input name="name" type="text" class="form-control" placeholder="Nhập tên người dùng">
+                    </div>
+                    <div class="col-md-3 col-sm-3 ">
+                        <label class="btn btn-primary" data-toggle-class="btn-primary"
+                            data-toggle-passive-class="btn-default">
+                            <input type="submit" name="gender" value="male" class="join-btn">
+                            &nbsp; Tìm kiếm &nbsp;
+                        </label>
+                    </div>
+                </form>
+
+                <br>
+                <br>
+                <table style="width: 100%">
+                    <thead>
+                        
+                        <th>UserName
+                        </th>
+                        <th>Pass
+                        </th>
+                        <th>HoTen
+                        </th>
+                    </thead>
+
+                    <body>
+                        @foreach (HocVien item in Model)
+                        {
+                        <tr>
+                            <td>
+                                <a id="btnDelete" class="glyphicon glyphicon-trash" href="/Admin/ManageAcc/Delete/@item.UserName"></a>&nbsp; &nbsp;
+                            </td>
+                          
+                            <td>@item.UserName</td>
+                            <td>@item.Pass</td>
+                            <td>@item.HoTen</td>
+                        </tr>
+                        }
+                    </body>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+

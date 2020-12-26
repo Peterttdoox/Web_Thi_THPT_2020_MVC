@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "";
+    Layout = "~/Areas/HocVienHeThong/Views/Shared/_layoutAdmin.cshtml";
+}
+
+@*@using CNLTTH_WebThiTHPT2020_DoTienThanh.DTO;
+@model  HocVien*@
+
+<div class="right_col" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_left">
+                <h3>Sửa</h3>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="x_panel">
+            <div class="x_content">
+                <form method="post">
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="form-group col-md-6">
+                                <label>UserName</label>
+                                <input class="form-control" name="UserName" value="@Model.UserName" />
+                            </div>
+                                
+                                <div class="form-group col-md-6">
+                                    <label>Pass</label>
+                                <input class="form-control" name="Pass" value="@Model.Pass" />
+                            </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <button type="submit" class="btn btn-success">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

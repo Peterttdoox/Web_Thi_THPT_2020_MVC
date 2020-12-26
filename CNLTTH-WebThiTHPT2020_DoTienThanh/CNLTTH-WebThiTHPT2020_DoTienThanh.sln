@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CNLTTH-WebThiTHPT2020_DoTienThanh", "CNLTTH-WebThiTHPT2020_DoTienThanh\CNLTTH-WebThiTHPT2020_DoTienThanh.csproj", "{168CB16F-0224-425F-AF2A-FEB6FB0B0D36}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMVC_OnthiTHPT2020", "WebMVC_OnthiTHPT2020\WebMVC_OnthiTHPT2020.csproj", "{0E8EAC5B-DBA4-4962-95D9-80072FCFFD1A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{168CB16F-0224-425F-AF2A-FEB6FB0B0D36} = {168CB16F-0224-425F-AF2A-FEB6FB0B0D36}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

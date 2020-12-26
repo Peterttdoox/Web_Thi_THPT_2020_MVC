@@ -1,10 +1,10 @@
 ﻿@*@{
-    if (Session["ID"] == null)//nếu chưa đăng nhập
-    {
-        //thì sẽ chuyển đến trang login
-        Response.Redirect("/Admin/Home/Login");
-    }
-}*@
+        if (Session["ID"] == null)//nếu chưa đăng nhập
+        {
+            //thì sẽ chuyển đến trang login
+            Response.Redirect("/HocVienHeThong/Home/Login");
+        }
+    }*@
 
 
 <!DOCTYPE html>
@@ -17,26 +17,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-    <title>THKids - Thế giới thời trang cho bé! | </title>
+    <title>Chào mừng bạn quay trở lại hệ thống| </title>
 
     <!-- Bootstrap -->
-    <link href="~/Areas/Admin/Content/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Areas/HocVienHeThong/Content/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="~/Areas/Admin/Content/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/Areas/HocVienHeThong/Content/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
-    <link href="~/Areas/Admin/Content/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="~/Areas/HocVienHeThong/Content/vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
-    <link href="~/Areas/Admin/Content/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <link href="~/Areas/HocVienHeThong/Content/vendors/iCheck/skins/flat/green.css" rel="stylesheet">
 
     <!-- bootstrap-progressbar -->
-    <link href="~/Areas/Admin/Content/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <link href="~/Areas/HocVienHeThong/Content/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
     <!-- JQVMap -->
-    <link href="~/Areas/Admin/Content/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+    <link href="~/Areas/HocVienHeThong/Content/vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
     <!-- bootstrap-daterangepicker -->
-    <link href="~/Areas/Admin/Content/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+    <link href="~/Areas/HocVienHeThong/Content/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="~/Areas/Admin/Content/build/css/custom.min.css" rel="stylesheet">
+    <link href="~/Areas/HocVienHeThong/Content/build/css/custom.min.css" rel="stylesheet">
 </head>
 
 <body class="nav-md">
@@ -45,7 +45,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="/Admin/Home/Index" class="site_title"><i class="fa fa-paw"></i> <span>THKids</span></a>
+                        <a href="/HocVienHeThong/Home/Index" class="site_title"><i class="fa fa-paw"></i> <span>He Thong On Thi</span></a>
                     </div>
 
                     <div class="clearfix"></div>
@@ -70,18 +70,9 @@
                             <h3>Danh mục quản lý</h3>
                             <ul class="nav side-menu">
 
-                                <li><a href="/Admin/QuanTriVien/Index"><i class="fa fa-user"></i>Quản trị viên</a></li>
-                                <li><a href="/Admin/NhanVien/Index"><i class="fa fa-user"></i>Nhân viên</a></li>
-                                <li><a href="/Admin/SanPham/Index"><i class="fa fa-edit"></i>Sản phẩm</a></li>
-                                <li><a href="/Admin/ThuongHieu/Index"><i class="fa fa-book"></i>Thương hiệu</a></li>
-                                <li><a href="/Admin/ChatLieu/Index"><i class="fa fa-book"></i>Chất liệu</a></li>
-                                <li><a href="/Admin/KichCo/Index"><i class="fa fa-calculator"></i>Kích cỡ</a></li>
-                                <li><a href="/Admin/DanhMuc/Index"><i class="fa fa-clone"></i>Danh mục</a></li>
-                                <li><a href="/Admin/DanhMucSanPham/Index"><i class="fa fa-bar-chart"></i>Danh mục sản phẩm</a></li>
-                                <li><a href="/Admin/DonHang/Index"><i class="fa fa-clone"></i>Đơn hàng</a></li>
-                                <li><a href="/Admin/ChiTietDonHang/Index"><i class="fa fa-edit"></i>Chi tiết đơn hàng</a></li>
-                                <li><a href="/Admin/KhachHang/Index"><i class="fa fa-clone"></i>Khách hàng</a></li>
-                                <li><a href="/Admin/TrangThaiDonHang/Index"><i class="fa fa-edit"></i>Trạng thái đơn hàng</a></li>
+                                <li><a href="/HocVienHeThong/HocVien/Index"><i class="fa fa-user"></i>Học viên</a></li>
+                                <li><a href="/HocVienHeThong/Feeback/Index"><i class="fa fa-user"></i>Feedback</a></li>
+                                <li><a href="/HocVienHeThong/LuuDeThi/Index"><i class="fa fa-edit"></i>Lưu đề thi</a></li>
 
                             </ul>
 
@@ -155,45 +146,45 @@
     </div>
 
     <!-- jQuery -->
-    <script src="~/Areas/Admin/Content/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <script src="~/Areas/Admin/Content/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- FastClick -->
-    <script src="~/Areas/Admin/Content/vendors/fastclick/lib/fastclick.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/fastclick/lib/fastclick.js"></script>
     <!-- NProgress -->
-    <script src="~/Areas/Admin/Content/vendors/nprogress/nprogress.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/nprogress/nprogress.js"></script>
     <!-- Chart.js -->
-    <script src="~/Areas/Admin/Content/vendors/Chart.js/dist/Chart.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/Chart.js/dist/Chart.min.js"></script>
     <!-- gauge.js -->
-    <script src="~/Areas/Admin/Content/vendors/gauge.js/dist/gauge.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/gauge.js/dist/gauge.min.js"></script>
     <!-- bootstrap-progressbar -->
-    <script src="~/Areas/Admin/Content/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
     <!-- iCheck -->
-    <script src="~/Areas/Admin/Content/vendors/iCheck/icheck.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/iCheck/icheck.min.js"></script>
     <!-- Skycons -->
-    <script src="~/Areas/Admin/Content/vendors/skycons/skycons.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/skycons/skycons.js"></script>
     <!-- Flot -->
-    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.time.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/Flot/jquery.flot.resize.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/Flot/jquery.flot.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/Flot/jquery.flot.time.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/Flot/jquery.flot.resize.js"></script>
     <!-- Flot plugins -->
-    <script src="~/Areas/Admin/Content/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/flot.curvedlines/curvedLines.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/flot.curvedlines/curvedLines.js"></script>
     <!-- DateJS -->
-    <script src="~/Areas/Admin/Content/vendors/DateJS/build/date.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/DateJS/build/date.js"></script>
     <!-- JQVMap -->
-    <script src="~/Areas/Admin/Content/vendors/jqvmap/dist/jquery.vmap.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
     <!-- bootstrap-daterangepicker -->
-    <script src="~/Areas/Admin/Content/vendors/moment/min/moment.min.js"></script>
-    <script src="~/Areas/Admin/Content/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/moment/min/moment.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
     <!-- Custom Theme Scripts -->
-    <script src="~/Areas/Admin/Content/build/js/custom.min.js"></script>
+    <script src="~/Areas/HocVienHeThong/Content/build/js/custom.min.js"></script>
 
 </body>
 </html>
