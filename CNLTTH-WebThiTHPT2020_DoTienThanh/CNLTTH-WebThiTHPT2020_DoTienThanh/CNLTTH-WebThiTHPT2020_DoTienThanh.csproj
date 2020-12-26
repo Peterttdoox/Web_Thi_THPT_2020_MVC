@@ -162,9 +162,15 @@
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DAO\ACCOUNTDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\LuuDeThiDAO.cs" />
+    <Compile Include="DAO\FeedbackDAO.cs" />
+    <Compile Include="DAO\HocVienDAO.cs" />
     <Compile Include="DAO\ROLE_NAMESDAO.cs" />
     <Compile Include="DAO\USERSDAO.cs" />
     <Compile Include="DTO\ACCOUNT.cs" />
+    <Compile Include="DTO\LuuDeThi.cs" />
+    <Compile Include="DTO\Feedback.cs" />
+    <Compile Include="DTO\HocVien.cs" />
     <Compile Include="DTO\ROLE_NAMES.cs" />
     <Compile Include="DTO\USERS.cs" />
     <Compile Include="Global.asax.cs">

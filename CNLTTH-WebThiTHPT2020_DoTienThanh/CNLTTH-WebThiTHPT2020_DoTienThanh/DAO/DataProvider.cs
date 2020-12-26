@@ -11,7 +11,7 @@ namespace CNLTTH_WebThiTHPT2020_DoTienThanh.DAO
     {
         private static volatile DataProvider instance;
         private DataProvider() { }
-        private string str = @"Data Source=DESKTOP-0NR1477;Initial Catalog=WebOnThiTHPT;Integrated Security=True";
+        private string str = @"Data Source=DESKTOP-DL2GCBT\SQLEXPRESS;Initial Catalog=OnThi;Integrated Security=True";
         static object key = new object();
         public static DataProvider Instance
         {
